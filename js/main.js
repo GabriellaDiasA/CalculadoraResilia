@@ -1,5 +1,5 @@
 /* Retorna um array com os botões da calculadora */
-let histricogeral = document.getElementById('histricogeral')
+let histricogeral = document.getElementById('histricogeral');
 
 /* Histórico de operacoes */
 let click = document.querySelectorAll(".click");
@@ -44,7 +44,11 @@ let operadores = {
         console.log('Resultado Anterior', resultadoAnterior);
         
         displayResultado.textContent = calculo;
+        numeros = [calculo];
     },
+    trocarSinal: function(){
+
+    }
 };
 
 
