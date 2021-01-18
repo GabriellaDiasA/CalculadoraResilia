@@ -13,7 +13,7 @@ button{
 }
 
 #megaDiv{
-    background-color: red;
+    background-color:rgb(5,5,5);
     height: 100vh;
     width: 100vw;
 }
@@ -32,6 +32,7 @@ button{
 }
 
 #calculadoraDiv{
+    margin: auto;
     flex-flow: column;
     align-items: center;
     justify-content: center;
@@ -45,9 +46,15 @@ button{
 
 #memoria{
     overflow-y: scroll;
-    background-color: white;
-    width: 50%;
-    height: 100%;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 40%;
+    height: 95%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 380px;
+    padding: 60px;
+    font-size: 25px;
 }
 
 #display{
@@ -121,3 +128,34 @@ button{
     flex-direction: row-reverse;
     padding: 10px;
 }
+
+
+/* Comportamento e estilo do histórico de operacoes */
+#historico{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #e8c100;
+    color: #343434 ;
+}
+
+#fecharHistorico{
+    padding: 10px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #e8c100;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: inline;
+}
+    

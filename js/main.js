@@ -1,4 +1,7 @@
 /* Retorna um array com os botões da calculadora */
+let histricogeral = document.getElementById('histricogeral')
+
+/* Histórico de operacoes */
 let click = document.querySelectorAll(".click");
 
 /* Display dos historicos */
@@ -25,17 +28,22 @@ let operadores = {
         resultadoAnterior = [];
     },
     addOperacao:function(simbolo){
-        numeros.push(simbolo);
+
+        if(numeros[numeros.length -1] == '+' || 
+        numeros[numeros.length -1] == '-' || 
+        numeros[numeros.length -1] == '*' || 
+        numeros[numeros.length -1] == '/'){
+            numeros[numeros.length -1] = simbolo;
+        }else{
+            numeros.push(simbolo);
+        };
     },
     total:function(){
-
         let calculo = eval(numeros.join(""));
-
         resultadoAnterior = calculo;
-       
+        console.log('Resultado Anterior', resultadoAnterior);
+        
         displayResultado.textContent = calculo;
-
-
     },
 };
 
@@ -108,12 +116,12 @@ click.forEach(function (click) {
 
                 };
                 
-                
             break
         };
 
         /* Mostra a opração realizada no display de historicos */
         display.textContent = numeros.join("");
+        histricogeral.textContent = numeros.join("")
         
         console.log(numeros);
     });
