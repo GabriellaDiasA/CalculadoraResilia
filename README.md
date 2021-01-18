@@ -34,4 +34,4 @@ Estamos implementando novos comportamentos na interface, corrigindo bugs etc..._
 - [Elivelton Souza](https://github.com/EliveltonSouzaDev)
 - [Bruno Sampaio](https://github.com/BrunoSampaioDev)
 - [Adriano Barreto](https://####)
-- [Gustavo ](https://####)
+- [Gustavo ](https://github.com/GustavoVerissimo)
