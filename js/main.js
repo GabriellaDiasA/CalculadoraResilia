@@ -40,6 +40,7 @@ let operadores = {
     },
     total:function(){
         let calculo = eval(numeros.join(""));
+        
         resultadoAnterior = calculo;
         console.log('Resultado Anterior', resultadoAnterior);
         
@@ -106,7 +107,10 @@ click.forEach(function (click) {
                         numeros.push(parseInt(valor));
                     } else {
                         
-                        if (numeros[numeros.length - 1] == '+' || numeros[numeros.length - 1] == '*') {
+                        if (numeros[numeros.length - 1] == '+' 
+                        || numeros[numeros.length - 1] == '*' 
+                        || numeros[numeros.length - 1] == '/' 
+                        || numeros[numeros.length - 1] == '%') {
                             numeros.push(parseInt(valor));
                         } else {
                             let concatena = numeros[numeros.length - 1] + valor;
@@ -122,8 +126,7 @@ click.forEach(function (click) {
 
         /* Mostra a opração realizada no display de historicos */
         display.textContent = numeros.join("");
-        histricogeral.textContent = numeros.join("")
-        
+        histricogeral.textContent = numeros.join("");
         console.log(numeros);
     });
 });
