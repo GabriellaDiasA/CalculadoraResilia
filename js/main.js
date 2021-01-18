@@ -15,20 +15,27 @@ let operar = document.getElementById("Igual");
 
 /* todos o numeros e operadores são adicionados neste array */
 let numeros = [];
+
+/* o resultado gerado no array acima vem para este array */
 let resultadoAnterior = [];
 
 
 /* Objeto com os metodos de operadores */
 let operadores = {
 
+    /* Limpar display e historico */
     clear:function(){
         numeros = [];
         display.innerHTML = "";
         displayResultado.textContent = 0;
         resultadoAnterior = [];
     },
+
+    /* Adiciona o simbolo da operação no array */
     addOperacao:function(simbolo){
 
+        /* Verifica se o ultimo caractere do array é um simbolo,
+        se for um simbolo ele substitui se não ele adiciona o simbolo */
         if(numeros[numeros.length -1] == '+' || 
         numeros[numeros.length -1] == '-' || 
         numeros[numeros.length -1] == '*' || 
@@ -38,6 +45,7 @@ let operadores = {
             numeros.push(simbolo);
         };
     },
+    /* Gera o resultado e atualiza o display */
     total:function(){
         let calculo = eval(numeros.join(""));
         
@@ -57,8 +65,10 @@ click.forEach(function (click) {
 
     click.addEventListener("click", function () {
 
+        /* pega o id de cada botão */
         let valor = click.id;
 
+        /*  */
         switch (valor) {
             case 'C':
                 operadores.clear();
@@ -98,15 +108,17 @@ click.forEach(function (click) {
             case '7':
             case '8':
             case '9':
+                /* Verifica se é um numero ou simbolo */
                 if (isNaN(valor)) {
                     display.textContent = 'error'
-                    console.log(valor)
+                    
                 } else {
-
+                    /* Verifica se o array é vazio e setiver faz um push com o valor
+                    se não ele apenas atualiza os valores que já estão lá */
                     if (numeros == '') {
                         numeros.push(parseInt(valor));
                     } else {
-                        
+                        /* se for um simbolo faz um push e gera uma nova posição no array */
                         if (numeros[numeros.length - 1] == '+' 
                         || numeros[numeros.length - 1] == '*' 
                         || numeros[numeros.length - 1] == '/' 
