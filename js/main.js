@@ -46,9 +46,6 @@ let operadores = {
         displayResultado.textContent = calculo;
         numeros = [calculo];
     },
-    trocarSinal: function(){
-
-    }
 };
 
 
