@@ -1,10 +1,12 @@
-# Desafio Calculadora.
+# Desafio da calculadora Resilia.
 
-O desafio era criar o front-end de uma plataforma de steaming / entretenimento, voltado para filmes.
+O desafio era criar uma calculadora com js, html e css.
 
-- [x] Versão Desktop
-- [x] Versão mobail iphones 6, 7, 8, X /Plus
-- [ ] Versão mobail Ipdas e outro tablets (🚧  🚀 Em construção...  🚧)
+### Requisitos minímos.
+
+- [ ] Requisito 1
+- [ ] Requisito 2
+- [ ] Requisito 3
 
 
 
