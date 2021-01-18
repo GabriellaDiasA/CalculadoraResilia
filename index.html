@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +9,36 @@
 <body>
     <div id="megaDiv" class="flexContainer">
         <div id="calculadoraDiv">
-            <div id="display"></div>
+            <div id="display">
+                <p class="data"></p>
+                <P class="displayTela">0</P>
+                <P class="displayTelaResultado">0</P>
+            </div>
             <div id="calculadora" class="gridContainer">
-                <button class="btn" id="C">C</button>
-                <button class="btn" id="Inverter Sinal">+ | -</button>
-                <button class="btn" id="Porcento">%</button>
-                <button class="btn" id="Dividir">/</button>
-                <button class="num" id="7">7</button>
-                <button class="num" id="8">8</button>
-                <button class="num" id="9">9</button>
-                <button class="btn" id="Multiplica">*</button>
-                <button class="num" id="4">4</button>
-                <button class="num" id="5">5</button>
-                <button class="num" id="6">6</button>
-                <button class="btn" id="Menos">-</button>
-                <button class="num" id="1">1</button>
-                <button class="num" id="2">2</button>
-                <button class="num" id="3">3</button>
-                <button class="btn" id="Mais">+</button>
-                <button class="numZero" id="0">0</button>
-                <button class="btn" id="Virgula">,</button>
-                <button class="Igual" id="Igual">=</button>
+                <button class="btn num click" id="C">C</button>
+                <button class="btn num click" id="Inverter Sinal">+ | -</button>
+                <button class="btn num click" id="Porcento">%</button>
+                <button class="btn num click" id="Dividir">/</button>
+                <button class="num click" id="7">7</button>
+                <button class="num click" id="8">8</button>
+                <button class="num click" id="9">9</button>
+                <button class="btn num click" id="Multiplica">*</button>
+                <button class="num click" id="4">4</button>
+                <button class="num click" id="5">5</button>
+                <button class="num click" id="6">6</button>
+                <button class="btn num click" id="Menos">-</button>
+                <button class="num click" id="1">1</button>
+                <button class="num click" id="2">2</button>
+                <button class="num click" id="3">3</button>
+                <button class=" btn num click" id="Mais">+</button>
+                <button class="numZero click" id="0">0</button>
+                <button class="num click" id="Virgula">,</button>
+                <button class="btn Igual click" id="Igual">=</button>
             </div>
         </div>
         <div id="memoria">
         </div>
     </div>
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

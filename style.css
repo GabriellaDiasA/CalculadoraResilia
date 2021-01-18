@@ -105,3 +105,19 @@ button{
     background-color: lightgrey;
     color: black;
 }
+
+.displayTela{
+    font-size: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 10px 0  0;
+}
+
+.displayTelaResultado{
+    font-size: 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
