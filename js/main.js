@@ -128,6 +128,7 @@ click.forEach(function (click) {
         display.textContent = numeros.join("");
         histricogeral.textContent = numeros.join("");
         console.log(numeros);
+        //
     });
 });
 
